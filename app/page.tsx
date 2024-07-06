@@ -102,7 +102,7 @@ export default function Home() {
           </table>
         </section>
 
-        
+          <section className="section-top">
           <h2><FaUsers /> III. Detailed Component Breakdown</h2>
           <br></br>
           <section className="section-bottom">
@@ -146,7 +146,7 @@ export default function Home() {
           <p><strong>Amount:</strong> $4,250</p>
           <p><strong>Purpose:</strong> To create a detailed case study, including performance metrics and user experience insights, providing actionable recommendations.</p>
         </section>
-
+        </section>
         <section>
           <h2>IV. Manager Pay and Feedback Participants Example Breakdown</h2>
           <br></br>
@@ -232,6 +232,20 @@ export default function Home() {
         border-color: purple;
         }
         .section-bottom.visible {
+          opacity: 1; 
+        }
+          .section-bottom:hover {
+          transform: scale(1.01);
+        }
+        .section-top {
+        margin-bottom: 40px;
+        border: 1px solid;
+        border-radius: 12px;
+        opacity: 1;
+        padding: 15px;
+        border-color: gray;
+        }
+        .section-top.visible {
           opacity: 1; 
         }
         table tr:hover {
